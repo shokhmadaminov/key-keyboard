@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inika:wght@100;200;300;400;500;600;700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inika', 'Arial', serif;
+    color: #797979;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(199, 221, 255);
+}
+
+.title {
+    width: 480px;
+    height: 80px;
+    border: solid #797979 2px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    width: 180px;
+    height: 80px;
+    border: solid #797979 2px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: relative;
+}
+.card:first-child {
+    margin-left: 0;
+}
+.card-1::after {
+    content: 'EnentKey';
+    font-weight: bold;
+    position: absolute;
+    top: -50%;
+}
+.card-2::after {
+    content: 'EventNumb';
+    font-weight: bold;
+    position: absolute;
+    top: -50%;
+}
+.card-3::after {
+    content: 'Key';
+    font-weight: bold;
+    position: absolute;
+    top: -50%;
+}
+.hidden {
+    display: none;
+}
